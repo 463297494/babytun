@@ -15,7 +15,7 @@ public class GoodsConfig {
 	@Bean
 	public Test getTest(Goods goods){
 		Test t = new Test();
-		System.out.println("初始化Test:"+goods);
+		System.out.println("初始化Testxxx:"+goods);
 		t.setG(goods);
 		return t;
 	}
