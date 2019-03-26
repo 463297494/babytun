@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+      <mapper namespace="com.wghs.babytun.dao.GoodsParamDao">
+      	<select id="findGoodsParamById" resultType="com.wghs.babytun.entity.GoodsParam" parameterType="long">
+      		select * from t_goods_param where goods_id = #{id} order by gp_order
+      	</select>
+      </mapper>  
+        
+ 
